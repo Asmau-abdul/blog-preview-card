@@ -1,0 +1,273 @@
+:root{
+    /* colours */
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+
+    /* sizes */
+    --size-xxs: 0.5rem;
+    --size-xs: 0.75rem;
+    --size-s: 0.875rem;
+    --size-base: 1rem;
+    --size-l: 1.125rem;
+    --size-xl: 1.25rem;
+    --size-2xl: 1.5rem;
+    --size-3xl: 1.875rem;
+    --size-4xl: 2.25rem;
+    --size-5xl: 3rem;
+    --size-6xl: 3.75rem;
+    --size-7xl: 4.5rem;
+    --size-8xl: 6rem;
+    --size-9xl: 8rem;
+    --size-10xl: 10rem;
+}
+
+@font-face {
+    font-family: Figtree-extrabold;
+    src: url(assets/fonts/static/Figtree-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: Figtree-semibold;
+    src: url(assets/fonts/static/Figtree-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Figtree-italic;
+    src: url(assets/fonts/Figtree-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Figtree-var;
+    src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    background-color: var(--Yellow);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    line-height: calc(1em + 0.5rem);
+}
+
+main{
+    width: 100%;
+}
+
+.first_sect{
+    width: 80%;
+    margin: 15rem auto;
+    background-color: var(--White);
+    border: 1px solid var(--Black);
+    border-radius: 1.5rem;
+    box-shadow: 5px 5px;
+}
+
+.main_sect{
+    margin: 2rem;
+}
+
+.main_img{
+    width: 100%;
+}
+
+.main_img img{
+    width: 100%;
+    border-radius: 1rem;
+}
+
+button{
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    background-color: var(--Yellow);
+    color: var(--Black);
+    font-family: Figtree-extrabold;
+    font-size: var(--size-base);
+    border: none;
+    border-radius: .5rem;
+}
+
+.pub{
+    color: var(--Black);
+    font-family: Figtree-semibold;
+    font-size: var(--size-base);
+}
+
+h1{
+    margin: 1rem 0;
+    font-family: Figtree-extrabold;
+    font-size: var(--size-2xl);
+    color: var(--Black);
+}
+
+h1:hover{
+    cursor: pointer;
+    color: var(--Yellow);
+}
+
+body:has(h1:hover) .first_sect{
+    box-shadow: 10px 10px;
+    transition: 1s;
+}
+
+.article p{
+    color: var(--Grey);
+    font-size: var(--size-base);
+    font-family: Figtree-semibold;
+}
+
+.avatar{
+    display: flex;
+    margin-top: 2rem;
+}
+
+.avatar img{
+    width: var(--size-5xl);
+}
+
+.avatar h2{
+    font-size: var(--size-xl);
+    font-family: Figtree-extrabold;
+    margin: auto 1rem;
+}
+
+/* xs */
+@media screen and (min-width: 475px) {
+    main{
+        max-width: 475px;
+    }
+}
+
+/* s */
+@media screen and (min-width: 640px) {
+    main{
+        max-width: 640px;
+    }
+
+    .first_sect{
+        width: 65%;
+    }
+
+    button{
+        margin: 1rem 0;
+        padding: 1rem 1.5rem;
+        font-size: var(--size-xl);
+    }
+
+    .pub{
+        font-size: var(--size-xl);
+    }
+    
+    h1{
+        font-size: var(--size-4xl);
+    }
+
+    .article p{
+        font-size: var(--size-xl);
+    }
+    
+    .avatar img{
+        width: var(--size-7xl);
+    }
+
+    .avatar h2{
+        font-size: var(--size-3xl);
+    }
+}
+
+/* m */
+@media screen and (min-width: 768px) {
+    main{
+        max-width: 768px;
+    }
+
+    .first_sect{
+        width: 55%;
+    }
+
+    button{
+        margin: 1.5rem 0;
+        padding: 1.5rem 2rem;
+        font-size: var(--size-3xl);
+    }
+
+    .pub{
+        font-size: var(--size-3xl);
+    }
+    
+    h1{
+        font-size: var(--size-5xl);
+    }
+
+    .article p{
+        font-size: var(--size-3xl);
+    }
+    
+    .avatar img{
+        width: var(--size-8xl);
+    }
+
+    .avatar h2{
+        font-size: var(--size-4xl);
+    }
+}
+
+/* l */
+@media screen and (min-width: 1024px) {
+    main{
+        max-width: 1024px;
+    }
+
+    .first_sect{
+        width: 45%;
+    }
+}
+
+/* xl */
+@media screen and (min-width: 1280px) {
+    main{
+        max-width: 1280px;
+    }    
+
+    .first_sect{
+        width: 40%;
+    }
+
+    button{
+        margin: 1.5rem 0;
+        padding: 1.5rem 2rem;
+        font-size: var(--size-4xl);
+    }
+
+    .pub{
+        font-size: var(--size-4xl);
+    }
+    
+    h1{
+        font-size: var(--size-6xl);
+    }
+
+    .article p{
+        font-size: var(--size-4xl);
+    }
+    
+    .avatar img{
+        width: var(--size-9xl);
+    }
+
+    .avatar h2{
+        font-size: var(--size-5xl);
+    }
+}
+
+/* xxl */
+@media screen and (min-width: 1536px) {
+    main{
+        max-width: 1536px;
+    }
+}
