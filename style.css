@@ -49,6 +49,13 @@ html{
     background-color: var(--Yellow);
 }
 
+body {
+    min-height: 100vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -187,33 +194,33 @@ body:has(h1:hover) .first_sect{
     }
 
     .first_sect{
-        width: 55%;
+        width: 50%;
     }
 
     button{
         margin: 1.5rem 0;
         padding: 1.5rem 2rem;
-        font-size: var(--size-3xl);
+        font-size: var(--size-2xl);
     }
 
     .pub{
-        font-size: var(--size-3xl);
+        font-size: var(--size-2xl);
     }
     
     h1{
-        font-size: var(--size-5xl);
+        font-size: var(--size-4xl);
     }
 
     .article p{
-        font-size: var(--size-3xl);
+        font-size: var(--size-2xl);
     }
     
     .avatar img{
-        width: var(--size-8xl);
+        width: var(--size-7xl);
     }
 
     .avatar h2{
-        font-size: var(--size-4xl);
+        font-size: var(--size-3xl);
     }
 }
 
@@ -224,7 +231,7 @@ body:has(h1:hover) .first_sect{
     }
 
     .first_sect{
-        width: 45%;
+        width: 40%;
     }
 }
 
@@ -232,36 +239,10 @@ body:has(h1:hover) .first_sect{
 @media screen and (min-width: 1280px) {
     main{
         max-width: 1280px;
-    }    
+    }
 
     .first_sect{
-        width: 40%;
-    }
-
-    button{
-        margin: 1.5rem 0;
-        padding: 1.5rem 2rem;
-        font-size: var(--size-4xl);
-    }
-
-    .pub{
-        font-size: var(--size-4xl);
-    }
-    
-    h1{
-        font-size: var(--size-6xl);
-    }
-
-    .article p{
-        font-size: var(--size-4xl);
-    }
-    
-    .avatar img{
-        width: var(--size-9xl);
-    }
-
-    .avatar h2{
-        font-size: var(--size-5xl);
+        width: 30%;
     }
 }
 
